@@ -12,8 +12,8 @@
 		A6F8BA0915E1499F004270B2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F8BA0815E1499F004270B2 /* CoreServices.framework */; };
 		A6F8BA0B15E1499F004270B2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F8BA0A15E1499F004270B2 /* CoreFoundation.framework */; };
 		A6F8BA1115E1499F004270B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6F8BA0F15E1499F004270B2 /* InfoPlist.strings */; };
-		A6F8BA1315E1499F004270B2 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.c */; };
-		A6F8BA1515E1499F004270B2 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.c */; };
+		A6F8BA1315E1499F004270B2 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.m */; };
+		A6F8BA1515E1499F004270B2 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.m */; };
 		A6F8BA1715E1499F004270B2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A6F8BA1615E1499F004270B2 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +25,8 @@
 		A6F8BA0A15E1499F004270B2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A6F8BA0E15E1499F004270B2 /* QLWrapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLWrapper-Info.plist"; sourceTree = "<group>"; };
 		A6F8BA1015E1499F004270B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		A6F8BA1615E1499F004270B2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A6F8BA1815E1499F004270B2 /* QLWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QLWrapper-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +77,8 @@
 		A6F8BA0C15E1499F004270B2 /* QLWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.c */,
-				A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.c */,
+				A6F8BA1215E1499F004270B2 /* GenerateThumbnailForURL.m */,
+				A6F8BA1415E1499F004270B2 /* GeneratePreviewForURL.m */,
 				A6F8BA1615E1499F004270B2 /* main.c */,
 				A6F8BA0D15E1499F004270B2 /* Supporting Files */,
 			);
@@ -179,8 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6F8BA1315E1499F004270B2 /* GenerateThumbnailForURL.c in Sources */,
-				A6F8BA1515E1499F004270B2 /* GeneratePreviewForURL.c in Sources */,
+				A6F8BA1315E1499F004270B2 /* GenerateThumbnailForURL.m in Sources */,
+				A6F8BA1515E1499F004270B2 /* GeneratePreviewForURL.m in Sources */,
 				A6F8BA1715E1499F004270B2 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
