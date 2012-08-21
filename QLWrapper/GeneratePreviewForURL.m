@@ -21,7 +21,12 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         //       if file has no extension, then it will be simply "(uti)".
         //       Ex.: "Readme.unk" -> "public.data-unk"
         //       (unless .unk has been registered with a more-specific UTI)
+        // NOTE: Treat dynamic UTIs as "public.data".
         NSString *scriptName = (__bridge NSString *)(contentTypeUTI);
+        if ([scriptName hasPrefix:@"dyn."]) {
+           scriptName = @"public.data";
+        }
+
         NSString *filePath = [(__bridge NSURL *)url path];
         NSString *ext = [filePath pathExtension];
         if ([ext length] != 0) {
